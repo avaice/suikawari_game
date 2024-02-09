@@ -49,6 +49,8 @@ def render(screen):
 
 1. 好きな名前でブランチを切る
 2. 切ったブランチ -> mainブランチへのPull Requestを出す
+    1. (Pull Requestのタイトルってどうすればいいの？)
+        1. タイトルを考えるのが面倒な場合、 https://cho-ice.xyz/acmfront/ で自動作成できます。
 3. チームメンバーのApproveを待つ
 
 より具体的な手順: https://chat.openai.com/share/13c1ffbb-8d28-4c8f-b04d-05ed2e698cf1
