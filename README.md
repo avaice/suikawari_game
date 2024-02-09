@@ -1,5 +1,16 @@
 # スイカ割りゲーム
 
+## リポジトリをパソコンにCloneする
+
+1. まず、GitHubでSSHできるように設定する。
+    1. 参考: https://yu-report.com/entry/githubssh/
+3. `git clone git@github.com:avaice/suikawari_game.git`
+
+## ゲームの起動方法
+
+1. pygameをインストールする
+2. `python ./`
+
 ## ディレクトリの構成
 
 <pre>
@@ -30,3 +41,14 @@ def render(screen):
 ```
 
 シーンの一覧は`status.py`の`Scene` class で宣言されています。必要に応じて追加してください
+
+## コードのコミット（アップロード）方法
+
+複数人が同時に同じ箇所を編集した時にソースコードがおかしくならないように、mainリポジトリに直接コミットはできないようになっています。
+以下の方法でコードをコミットしてください。
+
+1. 好きな名前でブランチを切る
+2. 切ったブランチ -> mainブランチへのPull Requestを出す
+3. チームメンバーのApproveを待つ
+
+より具体的な手順: https://chat.openai.com/share/13c1ffbb-8d28-4c8f-b04d-05ed2e698cf1
