@@ -128,7 +128,7 @@ def render(screen):
                 (player_x / size, player_y / size), (suika_x / size, suika_y / size))
             update.sc_up(screen, count, dis, player_x/size, player_y/size)
             if suika_x == player_x and suika_y == player_y:  # プレイヤーとスイカの座標が同じだとクリア
-                status.Scene.CLEAR
+                status.scene = status.Scene.CLEAR
                 return
         else:
             # キーボードのイベント
@@ -207,7 +207,7 @@ def render(screen):
                 update.sc_up(screen, count, dis, player_x /
                              size, player_y / size)
                 if suika_x == player_x and suika_y == player_y:  # プレイヤーとスイカの座標が同じだとクリア
-                    status.Scene.CLEAR
+                    status.scene = status.Scene.CLEAR
                     return
     ser.close()  # マイコンのデータ受信を終了する
 
