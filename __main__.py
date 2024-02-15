@@ -1,8 +1,9 @@
 import pygame
-from view import top, game
+from view import top, game, clear, over
 import settings
 import status
 import sys
+
 
 # 初期化
 pygame.init()  # Pygameの初期化
@@ -17,6 +18,10 @@ def main():
             top.render(screen)
         elif status.scene == status.Scene.INGAME:
             game.render(screen)
+        elif status.scene == status.Scene.CLEAR:
+            clear.render(screen)
+        elif status.scene == status.Scene.OVER:
+            over.render(screen)
         elif status.scene == status.Scene.QUIT:
             pygame.quit()
             sys.exit()

@@ -4,7 +4,8 @@ from enum import Enum
 class Scene(Enum):  # 画面のシーン
     TOP = "TOP"
     INGAME = "INGAME"
-    RESULT = "RESULT"
+    CLEAR = "CLEAR"
+    OVER = "OVER"
     QUIT = "QUIT"
 
 
